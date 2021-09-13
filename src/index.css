@@ -5,6 +5,13 @@
 
 /* Rest of app */
 
+@layer utilities {
+  .turn-white {
+    -webkit-filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(90deg) brightness(108%) contrast(101%);
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(90deg) brightness(108%) contrast(101%);
+  }
+}
+
 body {
   font-family: 'roboto';
 }

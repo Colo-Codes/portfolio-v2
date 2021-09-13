@@ -2,6 +2,13 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    minHeight: {
+      '25vh': '25vh',
+      '50vh': '50vh',
+      '75vh': '75vh',
+      '85vh': '85vh',
+      '95vh': '95vh',
+    },
     zIndex: {
       'n3': -30,
       'n2': -20,
@@ -20,6 +27,7 @@ module.exports = {
       backgroundImage: {
         'wave-top': "url('./assets/img/waveTop.svg')",
         'virus': "url('./assets/img/virus.png')",
+        'to-do': "url('./assets/img/to-do-list.png')",
       }
     },
   },
@@ -43,6 +51,7 @@ module.exports = {
           'primary': '#ffffff',           /* primary color */
           'primary-focus': '#D2D4D7',     /* primary color - focused */
           'primary-content': '#000000',   /* Foreground content color to use on primary color */
+          'secondary': '#DADADA',         /* Light text on dark background */
         },
       },
     ],
