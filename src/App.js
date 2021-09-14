@@ -16,6 +16,10 @@ import AboutMe from './components/about_me/AboutMe';
 import CardTestimony from './components/about_me/CardTestimony';
 import H3Header from './components/UI/H3Header';
 import ButtonLight from './components/UI/ButtonLight';
+import IconBlack from './components/UI/IconBlack';
+import iconLinkedIn from './assets/img/icon-linkedin.png';
+import iconTwitter from './assets/img/icon-twitter.png';
+import iconGitHub from './assets/img/icon-github.png';
 
 function App() {
   return (
@@ -210,6 +214,40 @@ function App() {
         </div>
       </div>
       <div class='bg-wave-bottom w-full h-96 bg-no-repeat bg-cover -mt-5'></div>
+
+      {/* Footer */}
+      <footer class='grid grid-cols-2 gap-10 max-w-5xl m-auto mt-32'>
+
+        <nav>
+          <ul class='flex flex-col'>
+            <li><button class='btn btn-ghost mb-2'>Projects</button> </li>
+            <li><button class='btn btn-ghost mb-2'>Code Library</button> </li>
+            <li><button class='btn btn-ghost mb-2'>Blog Posts</button> </li>
+            <li><button class='btn btn-ghost mb-2'>About</button> </li>
+            <li><button class='btn btn-ghost'>Contact</button> </li>
+          </ul>
+        </nav>
+
+        <div class='text-left hero-content items-start'>
+          <div class='max-w-2xl'>
+            <p class='mb-5'><span><img src={locationPin} class='h-4 inline mb-1 mr-1' alt='Location pin icon' /></span>Adelaide, Australia</p>
+            <h1 class='mb-5 text-xl font-bold font-poppins'>
+              <span class='block'>Damian Demasi,</span><span class='text-5xl subpixel-antialiased'>web developer</span>
+            </h1>
+            <button class='btn mr-10'>Get my Resume</button>
+            <button class='btn btn-outline'>work@damiandemasi.com</button>
+            <div class="mt-14 flex justify-between">
+              <IconBlack icon={iconLinkedIn} goTo={'#'}>LinkedIn</IconBlack>
+              <IconBlack icon={iconTwitter} goTo={'#'}>Twitter</IconBlack>
+              <IconBlack icon={iconGitHub} goTo={'#'}>GitHub</IconBlack>
+            </div>
+          </div>
+        </div>
+
+        <p>Made with React, TailwindCSS and DaisyUI</p>
+        <p>Icons from...</p>
+        <p></p>
+      </footer>
 
     </>
   );
