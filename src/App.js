@@ -9,6 +9,7 @@ import ProjectLeft from './components/projects/ProjectLeft';
 import CodeLibraryItem from './components/projects/CodeLibraryItem';
 import BlogPostIntro from './components/blog_posts/BlogPostIntro';
 import ParagraphDark from './components/UI/ParagraphDark';
+import AboutMe from './components/about_me/AboutMe';
 
 function App() {
   return (
@@ -114,13 +115,24 @@ function App() {
       <button class='btn mx-auto mt-20 block'>Read more articles</button>
 
       {/* About me */}
-      <div class='bg-wave-top w-full h-96 bg-no-repeat bg-cover'></div>
+      <div class='bg-wave-top w-full h-96 bg-no-repeat bg-cover mt-10'></div>
       <div class='bg-black'>
 
-        <SectionHeader text={'About Me'} headerGradientStyle={'header-projects'} />
+        <SectionHeader text={'About Me'} headerGradientStyle={'header-about-me'} />
+        <AboutMe projectTitle={`Hi! 👋 I'm Damian`} bgImage={'bg-virus'} techStack={['Figma', 'HTML5', 'CSS3', 'GitHub', 'JS']}>
+          <ParagraphLight>
+            Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. <a class='link link-primary' href='http://localhost:3000/' target='_blank' rel='noreferrer'>It's just a simple link.</a> Porchetta shoulder meatball biltong. T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow. Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. Porchetta shoulder meatball biltong. T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow.
+          </ParagraphLight>
+          <ParagraphLight>
+            Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. Porchetta shoulder meatball biltong. T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow. Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. Porchetta shoulder meatball biltong. It's just a simple link. T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow.
+          </ParagraphLight>
+          <ParagraphLight>
+            Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. <a class='link link-primary' href='http://localhost:3000/' target='_blank' rel='noreferrer'>It's just a simple link.</a> Porchetta shoulder meatball biltong. T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow. Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. Porchetta shoulder meatball biltong. T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow.
+          </ParagraphLight>
+        </AboutMe>
+
       </div>
       <div class='bg-wave-bottom w-full h-96 bg-no-repeat bg-cover -mt-5'></div>
-
     </>
   );
 }

@@ -1,6 +1,6 @@
 import ButtonLight from '../UI/ButtonLight';
 import H3Header from '../UI/H3Header';
-import TechStack from './TechStack';
+import TechStack from '../UI/TechStack';
 
 const ProjectRight = props => {
     return (

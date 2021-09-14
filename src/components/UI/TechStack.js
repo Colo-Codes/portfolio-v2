@@ -3,7 +3,7 @@ import iconHTML5 from '../../assets/img/icon-html5.png';
 import iconCSS3 from '../../assets/img/icon-css3.png';
 import iconGitHub from '../../assets/img/icon-github.png';
 import iconJavaScript from '../../assets/img/icon-javascript-black.png';
-import TechStackElement from '../UI/TechStackElement';
+import TechStackElement from './TechStackElement';
 
 const techArray = [
     <TechStackElement key={`tech1-${Math.random()}`} icon={iconFigma}>Figma</TechStackElement>,

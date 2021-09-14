@@ -20,6 +20,22 @@
     background-color: #FE5A59;
     background-image: linear-gradient(45deg, #FE5A59, #8205FF);
   }
+
+  .header-about-me {
+    background-color: #08F1FF;
+    background-image: linear-gradient(45deg, #08F1FF, #FF5EF9);
+  }
+
+  .icon-link {
+    -webkit-filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(90deg) brightness(108%) contrast(101%);
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(90deg) brightness(108%) contrast(101%);
+  }
+
+  .icon-link:hover,
+  .icon-link:active {
+    -webkit-filter: invert(83%) sepia(3%) saturate(165%) hue-rotate(174deg) brightness(102%) contrast(96%);
+    filter: invert(83%) sepia(3%) saturate(165%) hue-rotate(174deg) brightness(102%) contrast(96%);
+  }
 }
 
 body {
