@@ -1,13 +1,14 @@
 import ButtonLight from '../UI/ButtonLight';
+import H3Header from '../UI/H3Header';
 import TechStack from './TechStack';
 
 const ProjectLeft = props => {
     return (
         <div class="mt-32 grid grid-cols-3 gap-6 max-w-5xl mx-auto text-white">
             <div class="col-span-2">
-                <h3 class="text-2xl font-bold mb-5">
+                <H3Header>
                     {props.projectTitle}
-                </h3>
+                </H3Header>
                 {props.children}
                 <div class="w-full h-72 bg-base-300"></div>
                 <h4 class="text-xl font-bold mt-5 mb-3">Tech stack used in this project</h4>
