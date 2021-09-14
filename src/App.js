@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import hero1 from './assets/img/hero1.png';
 import locationPin from './assets/img/locationPin.png';
+import reviewCesar from './assets/img/cesar-villagra.png';
+import reviewExequiel from './assets/img/exequiel-barrirero.png';
+import reviewAdrian from './assets/img/adrian-dzienisik.png';
 import './App.css';
 import SectionHeader from './components/UI/SectionHeader';
 import ProjectRight from './components/projects/ProjectRight';
@@ -10,6 +13,7 @@ import CodeLibraryItem from './components/projects/CodeLibraryItem';
 import BlogPostIntro from './components/blog_posts/BlogPostIntro';
 import ParagraphDark from './components/UI/ParagraphDark';
 import AboutMe from './components/about_me/AboutMe';
+import CardTestimony from './components/about_me/CardTestimony';
 
 function App() {
   return (
@@ -116,7 +120,7 @@ function App() {
 
       {/* About me */}
       <div class='bg-wave-top w-full h-96 bg-no-repeat bg-cover mt-10'></div>
-      <div class='bg-black'>
+      <div class='bg-black pb-32'>
 
         <SectionHeader text={'About Me'} headerGradientStyle={'header-about-me'} />
         <AboutMe projectTitle={`Hi! 👋 I'm Damian`} bgImage={'bg-virus'} techStack={['Figma', 'HTML5', 'CSS3', 'GitHub', 'JS']}>
@@ -133,6 +137,35 @@ function App() {
 
       </div>
       <div class='bg-wave-bottom w-full h-96 bg-no-repeat bg-cover -mt-5'></div>
+
+      <div class="grid grid-cols-3 gap-10 max-w-5xl mx-auto  -mt-80 ">
+        <CardTestimony image={reviewCesar} goTo={'#'} personName='César Ariel Villagra' jobPosition={
+          <>
+            <p>Certified Scrum Master</p>
+            <p>Project Manager</p>
+            <p>Mobile Core Networks</p>
+            <p>Expert Engineer</p>
+          </>}>
+          <p>“Damian is an excellent person to work with. His detailed knowledge of the business requirements makes him a very important resource. His professionalism & commitment are the keys for the successful delivery on time of the projects. He always has a keen eye on the 'day to day' details as well as the ability to differentiate immediate, near term and long term goals. His leadership skills makes working with him an enriching, challenging & enjoyable experience.”</p>
+        </CardTestimony>
+        <CardTestimony image={reviewExequiel} goTo={'#'} personName='Exequiel Barrirero' jobPosition={
+          <>
+            <p>Co-Founder</p>
+            <p>DevOps Cloud Engineer @ Binbash</p>
+            <p>AWS Certified Architect</p>
+          </>}>
+          <p>“After sharing several month at HP with Damian, I can say that he is a very enthusiast engineer, and has an amazing ability to learn new things by his own. He has an excellent technical background and was always willing to assist in any situation. Moreover, he was always adding value to our team, enforcing his co-workers with training and knowledge sharing. Hence, I don't hesitate to recommend him as employee, partner and person.”</p>
+        </CardTestimony>
+        <CardTestimony image={reviewAdrian} goTo={'#'} personName='Adrián Dzienisik' jobPosition={
+          <>
+            <p>Telecommunications Engineer</p>
+            <p>Product & Business Analyst</p>
+            <p>SAFe 4 Certified Practitioner</p>
+          </>}>
+          <p>“I had the pleasure to work with Damian at Claro for over 2 years, and I can say he is an excellent professional and a great person to work with. He consistently demonstrated a solid technical background, as well as excellent leadership and communication skills. He was a great mentor to me, and a committed team member, always adding value and sharing his knowledge of the business. In addition to this, his personality, positive attitude and dedication makes working with him a real enjoyable and valuable experience.”</p>
+        </CardTestimony>
+      </div>
+
     </>
   );
 }
