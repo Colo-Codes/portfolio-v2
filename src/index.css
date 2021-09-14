@@ -10,6 +10,11 @@
     -webkit-filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(90deg) brightness(108%) contrast(101%);
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(90deg) brightness(108%) contrast(101%);
   }
+
+  .header-projects {
+    background-color: #FB408F;
+    background-image: linear-gradient(45deg, #FB408F, #FAE937);
+  }
 }
 
 body {
@@ -17,8 +22,6 @@ body {
 }
 
 h2 {
-  background-color: #FB408F;
-  background-image: linear-gradient(45deg, #FB408F, #FAE937);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;

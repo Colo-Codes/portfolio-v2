@@ -7,6 +7,7 @@ import iconCss from './assets/img/icon-css3.png';
 import iconGitHub from './assets/img/icon-github.png';
 import iconJS from './assets/img/icon-javascript-black.png';
 import './App.css';
+import SectionHeader from './components/UI/SectionHeader';
 
 function App() {
   return (
@@ -48,7 +49,7 @@ function App() {
       {/* Projects */}
       <div class="bg-wave-top w-full h-60 bg-no-repeat bg-cover"></div>
       <div class="mt-32 bg-black">
-        <div class="-mt-32 text-secondary"><h2 class="text-5xl font-bold font-poppins text-center w-min subpixel-antialiased mx-auto">Projects</h2></div>
+        <SectionHeader text={"Projects"} headerGradientStyle={"header-projects"} />
 
         <div class="mt-32 grid grid-cols-3 gap-6 max-w-5xl mx-auto text-white">
           <div data-theme="mytheme" class="w-min justify-self-end">
