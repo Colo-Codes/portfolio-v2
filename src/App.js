@@ -8,6 +8,8 @@ import iconGitHub from './assets/img/icon-github.png';
 import iconJS from './assets/img/icon-javascript-black.png';
 import './App.css';
 import SectionHeader from './components/UI/SectionHeader';
+import ProjectRight from './components/projects/ProjectRight';
+import ParagraphLight from './components/UI/ParagraphLight';
 
 function App() {
   return (
@@ -51,29 +53,14 @@ function App() {
       <div class="mt-32 bg-black">
         <SectionHeader text={"Projects"} headerGradientStyle={"header-projects"} />
 
-        <div class="mt-32 grid grid-cols-3 gap-6 max-w-5xl mx-auto text-white">
-          <div data-theme="mytheme" class="w-min justify-self-end">
-            <div class="bg-virus bg-contain bg-no-repeat opacity-20 w-60 h-60 -ml-36 z-0 absolute"></div>
-            <button class="btn btn-primary mt-14 mb-5 w-56 z-1 relative">Watch it live</button>
-            <button class="btn btn-primary mb-5 w-56 z-1 relative">Full project description</button>
-            <button class="btn btn-primary w-56 z-1 relative">Project's GitHub</button>
-          </div>
-          <div class="col-span-2">
-            <h3 class="text-2xl font-bold mb-5">COVID-19 Dashboard</h3>
-            <p data-theme="mytheme" class="text-secondary mb-5">Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. <a class="link link-primary">It's just a simple link.</a> Porchetta shoulder meatball biltong. T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow. Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. Porchetta shoulder meatball biltong. T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow.</p>
-            <p data-theme="mytheme" class="text-secondary mb-5">Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. Porchetta shoulder meatball biltong. T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow. Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. Porchetta shoulder meatball biltong. <a class="link link-primary">It's just a simple link.</a> T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow.</p>
-            <div class="w-full h-72 bg-base-300"></div>
-            <h4 class="text-xl font-bold mt-5 mb-3">Tech stack used in this project</h4>
-            <p data-theme="mytheme" class="text-secondary mb-5">This was my second project, and I wanted to keep diving into JavaScript, as well as in the design aspect of it, hence the use of Figma.</p>
-            <div class="grid grid-cols-5 gap-4">
-              <div class="flex flex-col items-center"><img src={iconFigma} class="h-8 w-8 inline mb-1 mr-1 turn-white" alt="" /><span class="text-xs">Figma</span></div>
-              <div class="flex flex-col items-center"><img src={iconHtml} class="h-8 w-8 inline mb-1 mr-1 turn-white" alt="" /><span class="text-xs">HTML5</span></div>
-              <div class="flex flex-col items-center"><img src={iconCss} class="h-8 w-8 inline mb-1 mr-1 turn-white" alt="" /><span class="text-xs">CSS3</span></div>
-              <div class="flex flex-col items-center"><img src={iconGitHub} class="h-8 w-8 inline mb-1 mr-1 turn-white" alt="" /><span class="text-xs">Git & GitHub</span></div>
-              <div class="flex flex-col items-center"><img src={iconJS} class="h-8 w-8 inline mb-1 mr-1 turn-white" alt="" /><span class="text-xs">JavaScript</span></div>
-            </div>
-          </div>
-        </div>
+        <ProjectRight projectTitle={"COVID-19 Dashboard"} techStack={['Figma', 'HTML5', 'CSS3', 'GitHub', 'JS']}>
+          <ParagraphLight>
+            Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. <a class="link link-primary" href="http://localhost:3000/" target="_blank" rel="noreferrer">It's just a simple link.</a> Porchetta shoulder meatball biltong. T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow. Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. Porchetta shoulder meatball biltong. T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow.
+          </ParagraphLight>
+          <ParagraphLight>
+            Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. Porchetta shoulder meatball biltong. T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow. Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. Porchetta shoulder meatball biltong. It's just a simple link. T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow.
+          </ParagraphLight>
+        </ProjectRight>
 
         <div class="mt-32 grid grid-cols-3 gap-6 max-w-5xl mx-auto text-white">
           <div class="col-span-2">
