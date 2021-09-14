@@ -1,17 +1,14 @@
 import logo from './logo.svg';
 import hero1 from './assets/img/hero1.png';
 import locationPin from './assets/img/locationPin.png';
-import iconFigma from './assets/img/icon-figma.png';
-import iconHtml from './assets/img/icon-html5.png';
-import iconCss from './assets/img/icon-css3.png';
-import iconGitHub from './assets/img/icon-github.png';
-import iconJS from './assets/img/icon-javascript-black.png';
 import './App.css';
 import SectionHeader from './components/UI/SectionHeader';
 import ProjectRight from './components/projects/ProjectRight';
 import ParagraphLight from './components/UI/ParagraphLight';
 import ProjectLeft from './components/projects/ProjectLeft';
 import CodeLibraryItem from './components/projects/CodeLibraryItem';
+import BlogPostIntro from './components/blog_posts/BlogPostIntro';
+import ParagraphDark from './components/UI/ParagraphDark';
 
 function App() {
   return (
@@ -51,7 +48,7 @@ function App() {
       </div>
 
       {/* Projects */}
-      <div class='bg-wave-top w-full h-60 bg-no-repeat bg-cover'></div>
+      <div class='bg-wave-top w-full h-96 bg-no-repeat bg-cover'></div>
       <div class='bg-black'>
 
         <SectionHeader text={'Projects'} headerGradientStyle={'header-projects'} />
@@ -95,6 +92,35 @@ function App() {
 
         </div>
       </div>
+      <div class='bg-wave-bottom w-full h-96 bg-no-repeat bg-cover -mt-5'></div>
+
+      {/* Blog Posts */}
+      <SectionHeader text={'Blog Posts'} headerGradientStyle={'header-blog-posts'} class={'mt-52'} />
+
+      <BlogPostIntro blogTitle={'Hammering down React basics, with a paint coat of Material UI'} bgImage={'bg-blog-post'}>
+        <ParagraphDark>Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. Porchetta shoulder meatball biltong. T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow.</ParagraphDark>
+        <ParagraphDark>Vestibulum sed vestibulum libero, bibendum accumsan nisi. Duis mattis felis vitae pellentesque ultricies. Phasellus elementum feugiat metus vel fermentum. Aenean vitae nisl vel metus tincidunt rutrum. Nunc egestas, quam vitae porttitor lacinia, nisi purus pharetra ipsum, cursus iaculis neque massa vel.</ParagraphDark>
+      </BlogPostIntro>
+      <div class="divider w-1/2 mx-auto opacity-20"></div>
+      <BlogPostIntro blogTitle={'My second vanilla JavaScript Project: using APIs, promises, classes, error handling, and more!'} bgImage={'bg-blog-post'}>
+        <ParagraphDark>Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. Porchetta shoulder meatball biltong. T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow.</ParagraphDark>
+        <ParagraphDark>Vestibulum sed vestibulum libero, bibendum accumsan nisi. Duis mattis felis vitae pellentesque ultricies. Phasellus elementum feugiat metus vel fermentum. Aenean vitae nisl vel metus tincidunt rutrum. Nunc egestas, quam vitae porttitor lacinia, nisi purus pharetra ipsum, cursus iaculis neque massa vel.</ParagraphDark>
+      </BlogPostIntro>
+      <div class="divider w-1/2 mx-auto opacity-20"></div>
+      <BlogPostIntro blogTitle={'My first vanilla JavaScript Project: making a simple To-Do app'} bgImage={'bg-blog-post'}>
+        <ParagraphDark>Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. Porchetta shoulder meatball biltong. T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow.</ParagraphDark>
+        <ParagraphDark>Vestibulum sed vestibulum libero, bibendum accumsan nisi. Duis mattis felis vitae pellentesque ultricies. Phasellus elementum feugiat metus vel fermentum. Aenean vitae nisl vel metus tincidunt rutrum. Nunc egestas, quam vitae porttitor lacinia, nisi purus pharetra ipsum, cursus iaculis neque massa vel.</ParagraphDark>
+      </BlogPostIntro>
+      <button class='btn mx-auto mt-20 block'>Read more articles</button>
+
+      {/* About me */}
+      <div class='bg-wave-top w-full h-96 bg-no-repeat bg-cover'></div>
+      <div class='bg-black'>
+
+        <SectionHeader text={'About Me'} headerGradientStyle={'header-projects'} />
+      </div>
+      <div class='bg-wave-bottom w-full h-96 bg-no-repeat bg-cover -mt-5'></div>
+
     </>
   );
 }
