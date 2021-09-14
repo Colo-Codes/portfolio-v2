@@ -14,6 +14,8 @@ import BlogPostIntro from './components/blog_posts/BlogPostIntro';
 import ParagraphDark from './components/UI/ParagraphDark';
 import AboutMe from './components/about_me/AboutMe';
 import CardTestimony from './components/about_me/CardTestimony';
+import H3Header from './components/UI/H3Header';
+import ButtonLight from './components/UI/ButtonLight';
 
 function App() {
   return (
@@ -165,6 +167,49 @@ function App() {
           <p>“I had the pleasure to work with Damian at Claro for over 2 years, and I can say he is an excellent professional and a great person to work with. He consistently demonstrated a solid technical background, as well as excellent leadership and communication skills. He was a great mentor to me, and a committed team member, always adding value and sharing his knowledge of the business. In addition to this, his personality, positive attitude and dedication makes working with him a real enjoyable and valuable experience.”</p>
         </CardTestimony>
       </div>
+
+      {/* Contact */}
+      <div class='bg-wave-top w-full h-96 bg-no-repeat bg-cover mt-32'></div>
+      <div class='bg-black pb-32'>
+        <SectionHeader text={'Contact'} headerGradientStyle={'header-contact'} />
+        <div class="grid grid-cols-1 gap-10 max-w-2xl mx-auto">
+          <H3Header class='text-white mt-32'>
+            Let's get in touch!
+          </H3Header>
+          <p class='text-6xl text-center'>📣</p>
+          <div data-theme="mytheme" class='flex justify-around'>
+            <ButtonLight class='w-max'>work@damiandemasi.com</ButtonLight>
+            <ButtonLight class='w-max'>Message me on LinkedIn</ButtonLight>
+          </div>
+          <ParagraphLight>You can shoot me an email, send me a message on LinkedIn, or, if you prefer, use the contact form below.</ParagraphLight>
+
+          <form>
+            <div class="p-10 card bg-base-200">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Your name</span>
+                </label>
+                <input type="text" placeholder="Luke Skywalker" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Your e-mail address</span>
+                </label>
+                <input type="email" placeholder="luke@tatooine.com" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Your message</span>
+                </label>
+                <textarea class="textarea h-24 textarea-bordered" placeholder="I'm thinking about giving you my lightsaber..." required></textarea>
+              </div>
+              <input type="submit" value="Send message" class="btn w-max mt-10 mx-auto" />
+
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class='bg-wave-bottom w-full h-96 bg-no-repeat bg-cover -mt-5'></div>
 
     </>
   );

@@ -26,6 +26,11 @@
     background-image: linear-gradient(45deg, #08F1FF, #FF5EF9);
   }
 
+  .header-contact {
+    background-color: #F9131E;
+    background-image: linear-gradient(45deg, #F9131E, #B00EEB);
+  }
+
   .icon-link {
     -webkit-filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(90deg) brightness(108%) contrast(101%);
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(90deg) brightness(108%) contrast(101%);
