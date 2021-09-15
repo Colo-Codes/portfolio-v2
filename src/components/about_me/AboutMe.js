@@ -10,8 +10,8 @@ import TechStack from '../UI/TechStack';
 
 const AboutMe = props => {
     return (
-        <div class="mt-32 grid grid-cols-3 gap-6 max-w-5xl mx-auto text-white">
-            <div data-theme="mytheme" class="justify-self-center">
+        <div class="mt-32 flex gap-6 max-w-5xl mx-auto text-white px-2 flex-wrap md:flex-nowrap">
+            <div data-theme="mytheme" class="mx-auto">
                 <div>
                     <img src={hero1} alt='Damian Demasi with a hat in a park on a sunny day.' class='max-w-xs' />
                 </div>
@@ -24,7 +24,7 @@ const AboutMe = props => {
                     <IconWhite icon={iconGitHub} goTo={'#'}>GitHub</IconWhite>
                 </div>
             </div>
-            <div class="col-span-2">
+            <div class="">
                 <H3Header>
                     {props.projectTitle}
                 </H3Header>

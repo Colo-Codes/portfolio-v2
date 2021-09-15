@@ -25,15 +25,15 @@ function App() {
   return (
     <>
       {/* Navbar */}
-      <div class='pt-2 fixed mx-auto w-full z-10 bg-white'>
+      <div class='pt-2 fixed mx-auto w-full z-10 bg-gray-50'>
         <nav class='flex justify-between mx-auto max-w-5xl'>
-          <span>Logo</span>
-          <ul class='flex'>
-            <li><button class='btn btn-ghost mr-2'>Projects</button> </li>
-            <li><button class='btn btn-ghost mr-2'>Code Library</button> </li>
-            <li><button class='btn btn-ghost mr-2'>Blog Posts</button> </li>
-            <li><button class='btn btn-ghost mr-2'>About</button> </li>
-            <li><button class='btn btn-ghost'>Contact</button> </li>
+          <span class='hidden md:block md:ml-5 lg:mr-0'>Logo</span>
+          <ul class='flex mx-auto md:mr-2 items-center'>
+            <li><button class='btn btn-ghost btn-xs mx-1 sm:btn-sm lg:btn-md h-auto'>Projects</button> </li>
+            <li><button class='btn btn-ghost btn-xs mx-1 sm:btn-sm lg:btn-md h-auto'>Code<span class='hidden sm:inline sm:ml-2'>Library</span></button> </li>
+            <li><button class='btn btn-ghost btn-xs mx-1 sm:btn-sm lg:btn-md h-auto'>Blog<span class='hidden sm:inline sm:ml-2'>Posts</span></button> </li>
+            <li><button class='btn btn-ghost btn-xs mx-1 sm:btn-sm lg:btn-md h-auto'>About</button> </li>
+            <li><button class='btn btn-ghost btn-xs sm:btn-sm lg:btn-md h-auto'>Contact</button> </li>
           </ul>
         </nav>
       </div>
@@ -42,24 +42,24 @@ function App() {
       <div class='hero min-h-85vh'>
         <div class='text-left hero-content items-start'>
           <div>
-            <img src={hero1} alt='Damian Demasi with a hat in a park on a sunny day.' class='mt-10 max-w-xs' />
+            <img src={hero1} alt='Damian Demasi with a hat in a park on a sunny day.' class='mt-10 hidden lg:block lg:max-w-xs' />
           </div>
           <div class='max-w-2xl'>
             <p class='mb-5'><span><img src={locationPin} class='h-4 inline mb-1 mr-1' alt='Location pin icon' /></span>Adelaide, Australia</p>
-            <h1 class='mb-5 text-5xl font-bold font-poppins'>
-              <span class='block'>Damian Demasi,</span><span class='text-9xl subpixel-antialiased'>web developer</span>
+            <h1 class='mb-5 font-bold font-poppins'>
+              <span class='text-3xl md:text-4xl lg:text-5xl block'>Damian Demasi,</span><span class='text-6xl md:text-8xl lg:text-9xl subpixel-antialiased'>web<br />developer</span>
             </h1>
-            <p class='my-16 text-neutral'>
+            <p class='my-8 md:my-16 text-neutral'>
               I’m a Web Developer based in Adelaide, Australia. Even though I have a Telecommunications Engineering degree and an MBA, coding is my passion and I want it to be my new focus on my professional carrer. Developing applications for the web has become my drive.
             </p>
-            <button class='btn mr-10'>Get my Resume</button>
-            <button class='btn btn-outline'>work@damiandemasi.com</button>
+            <button class='btn mr-10 btn-sm text-xs lg:btn-md mb-5 sm:mb-0'>Get my Resume</button>
+            <button class='btn btn-outline btn-sm text-xs lg:btn-md'>work@damiandemasi.com</button>
           </div>
         </div>
       </div>
 
       {/* Projects */}
-      <div class='bg-wave-top w-full h-96 bg-no-repeat bg-cover'></div>
+      <div class='bg-wave-top w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover'></div>
       <div class='bg-black'>
 
         <SectionHeader text={'Projects'} headerGradientStyle={'header-projects'} />
@@ -84,7 +84,7 @@ function App() {
 
         <SectionHeader text={'Code Library'} headerGradientStyle={'header-projects'} class={'mt-52'} />
 
-        <div class='grid grid-cols-3 gap-10 max-w-5xl m-auto mt-32'>
+        <div class='flex flex-wrap md:flex-nowrap gap-10 max-w-5xl m-auto mt-32 px-2'>
           <div>
             <CodeLibraryItem codeLibraryTitle={'React hooks use cases'} goTo={'#'}>
               <p>Vestibulum sed vestibulum libero, bibendum accumsan nisi. Duis mattis felis vitae pellentesque ultricies. Phasellus elementum feugiat metus vel fermentum. Aenean vitae nisl vel metus tincidunt rutrum. Nunc egestas, quam vitae porttitor lacinia, nisi purus pharetra ipsum, cursus iaculis neque massa vel.</p>
@@ -103,10 +103,10 @@ function App() {
 
         </div>
       </div>
-      <div class='bg-wave-bottom w-full h-96 bg-no-repeat bg-cover -mt-5'></div>
+      <div class='bg-wave-bottom w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover -mt-5'></div>
 
       {/* Blog Posts */}
-      <SectionHeader text={'Blog Posts'} headerGradientStyle={'header-blog-posts'} class={'mt-52'} />
+      <SectionHeader text={'Blog Posts'} headerGradientStyle={'header-blog-posts'} class={'mt-24 lg:mt-52'} />
 
       <BlogPostIntro blogTitle={'Hammering down React basics, with a paint coat of Material UI'} bgImage={'bg-blog-post'}>
         <ParagraphDark>Bacon ipsum dolor amet beef tongue hamburger frankfurter flank meatloaf pastrami ham hock chuck chislic tail pork chop turkey ham. Porchetta shoulder meatball biltong. T-bone cow pork tenderloin ham hock jowl ribeye doner. Kevin short loin sausage picanha cow.</ParagraphDark>
@@ -125,7 +125,7 @@ function App() {
       <button class='btn mx-auto mt-20 block'>Read more articles</button>
 
       {/* About me */}
-      <div class='bg-wave-top w-full h-96 bg-no-repeat bg-cover mt-10'></div>
+      <div class='bg-wave-top w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover mt-10'></div>
       <div class='bg-black pb-32'>
 
         <SectionHeader text={'About Me'} headerGradientStyle={'header-about-me'} />
@@ -144,7 +144,7 @@ function App() {
       </div>
       <div class='bg-wave-bottom w-full h-96 bg-no-repeat bg-cover -mt-5'></div>
 
-      <div class="grid grid-cols-3 gap-10 max-w-5xl mx-auto  -mt-80 ">
+      <div class="flex flex-wrap gap-10 justify-evenly max-w-6xl mx-auto -mt-80 ">
         <CardTestimony image={reviewCesar} goTo={'#'} personName='César Ariel Villagra' jobPosition={
           <>
             <p>Certified Scrum Master</p>
@@ -173,17 +173,17 @@ function App() {
       </div>
 
       {/* Contact */}
-      <div class='bg-wave-top w-full h-96 bg-no-repeat bg-cover mt-32'></div>
+      <div class='bg-wave-top w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover mt-32'></div>
       <div class='bg-black pb-32'>
         <SectionHeader text={'Contact'} headerGradientStyle={'header-contact'} />
-        <div class="grid grid-cols-1 gap-10 max-w-2xl mx-auto">
+        <div class="flex flex-col gap-10 max-w-2xl mx-auto px-2">
           <H3Header class='text-white mt-32'>
             Let's get in touch!
           </H3Header>
           <p class='text-6xl text-center'>📣</p>
-          <div data-theme="mytheme" class='flex justify-around'>
-            <ButtonLight class='w-max'>work@damiandemasi.com</ButtonLight>
-            <ButtonLight class='w-max'>Message me on LinkedIn</ButtonLight>
+          <div data-theme="mytheme" class='flex flex-wrap justify-around'>
+            <ButtonLight class='w-max btn-sm text-xs lg:btn-md mb-5 sm:mb-0'>work@damiandemasi.com</ButtonLight>
+            <ButtonLight class='w-max btn-sm text-xs lg:btn-md mb-5 sm:mb-0'>Message me on LinkedIn</ButtonLight>
           </div>
           <ParagraphLight>You can shoot me an email, send me a message on LinkedIn, or, if you prefer, use the contact form below.</ParagraphLight>
 
@@ -213,10 +213,10 @@ function App() {
           </form>
         </div>
       </div>
-      <div class='bg-wave-bottom w-full h-96 bg-no-repeat bg-cover -mt-5'></div>
+      <div class='bg-wave-bottom w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover -mt-5'></div>
 
       {/* Footer */}
-      <footer class='grid grid-cols-2 gap-10 max-w-5xl m-auto mt-32'>
+      <footer class='flex flex-wrap justify-evenly gap-5 lg:gap-10 max-w-5xl m-auto mt-32'>
 
         <nav>
           <ul class='flex flex-col'>
@@ -231,22 +231,22 @@ function App() {
         <div class='text-left hero-content items-start'>
           <div class='max-w-2xl'>
             <p class='mb-5'><span><img src={locationPin} class='h-4 inline mb-1 mr-1' alt='Location pin icon' /></span>Adelaide, Australia</p>
-            <h1 class='mb-5 text-xl font-bold font-poppins'>
-              <span class='block'>Damian Demasi,</span><span class='text-5xl subpixel-antialiased'>web developer</span>
+            <h1 class='mb-5  font-bold font-poppins'>
+              <span class='block text-md lg:text-xl'>Damian Demasi,</span><span class='text-3xl lg:text-5xl subpixel-antialiased'>web<br />developer</span>
             </h1>
-            <button class='btn mr-10'>Get my Resume</button>
-            <button class='btn btn-outline'>work@damiandemasi.com</button>
+            <button class='btn mr-10 btn-sm text-xs lg:btn-md mb-5 sm:mb-0'>Get my Resume</button>
+            <button class='btn btn-outline btn-sm text-xs lg:btn-md'>work@damiandemasi.com</button>
             <div class="mt-14 flex justify-between">
               <IconBlack icon={iconLinkedIn} goTo={'#'}>LinkedIn</IconBlack>
               <IconBlack icon={iconTwitter} goTo={'#'}>Twitter</IconBlack>
               <IconBlack icon={iconGitHub} goTo={'#'}>GitHub</IconBlack>
             </div>
+            <p>Made with React, TailwindCSS and DaisyUI</p>
+            <p>Icons from...</p>
+            <p></p>
           </div>
         </div>
 
-        <p>Made with React, TailwindCSS and DaisyUI</p>
-        <p>Icons from...</p>
-        <p></p>
       </footer>
 
     </>

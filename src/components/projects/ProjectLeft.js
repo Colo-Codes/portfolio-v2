@@ -4,8 +4,8 @@ import TechStack from '../UI/TechStack';
 
 const ProjectLeft = props => {
     return (
-        <div class="mt-32 grid grid-cols-3 gap-6 max-w-5xl mx-auto text-white">
-            <div class="col-span-2">
+        <div class="mt-32 flex flex-wrap gap-6 max-w-5xl mx-auto px-2 text-white">
+            <div class="w-full md:w-9/12 md:mx-auto lg:max-w-xl">
                 <H3Header>
                     {props.projectTitle}
                 </H3Header>
@@ -17,14 +17,20 @@ const ProjectLeft = props => {
                     <TechStack usedTech={props.techStack} />
                 </div>
             </div>
-            <div data-theme="mytheme" class="w-4/5 justify-self-start">
-                <div class={`${props.bgImage} bg-contain bg-no-repeat opacity-20 w-60 h-60 z-0 absolute ml-20`}></div>
-                <div class="w-3/5 mr-auto pt-14">
+            <div data-theme="mytheme" class="max-w-sm justify-self-end mx-auto">
+                <div class="w-6/12 mx-auto lg:mx-0 lg:mr-auto lg:w-8/12 pt-14">
                     <ButtonLight goTo={"#"}>Watch it live</ButtonLight>
                     <ButtonLight goTo={"#"}>description</ButtonLight>
                     <ButtonLight goTo={"#"}>GitHub</ButtonLight>
+                    <div class={`${props.bgImage} bg-contain bg-no-repeat opacity-20 w-56 h-56 z-0 hidden lg:block`}></div>
                 </div>
             </div>
+
+
+
+
+
+
         </div>
     );
 };
