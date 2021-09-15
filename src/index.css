@@ -74,4 +74,71 @@
     -webkit-filter: invert(15%) sepia(4%) saturate(2519%) hue-rotate(184deg) brightness(99%) contrast(92%);
     filter: invert(15%) sepia(4%) saturate(2519%) hue-rotate(184deg) brightness(99%) contrast(92%);
   }
+
+  /* *********** */
+
+  .name-gradient {
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-color: #FE5A59;
+    background-image: linear-gradient(45deg, #1f2937 40%, #FE5A59 50%, #8205FF 75%, #1f2937 100%);
+    -webkit-animation: gradient 4s ease both;
+    animation: gradient 4s ease both;
+  }
+
+  .first-word-gradient {
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-color: #FB408F;
+    background-image: linear-gradient(45deg, #1f2937 40%, #FB408F 60%, #FAE937 75%, #1f2937 100%);
+    -webkit-animation: gradient 4s ease both;
+    animation: gradient 4s ease both;
+  }
+
+  .second-word-gradient {
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-color: #F9131E;
+    background-image: linear-gradient(45deg, #1f2937 40%, #F9131E 50%, #B00EEB 75%, #1f2937 100%);
+    -webkit-animation: gradient 4s ease both;
+    animation: gradient 4s ease both;
+  }
+
+  @-webkit-keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
 }

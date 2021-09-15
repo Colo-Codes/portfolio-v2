@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import hero1 from './assets/img/hero1.png';
 import locationPin from './assets/img/locationPin.png';
 import reviewCesar from './assets/img/cesar-villagra.png';
 import reviewExequiel from './assets/img/exequiel-barrirero.png';
@@ -20,46 +18,20 @@ import IconBlack from './components/UI/IconBlack';
 import iconLinkedIn from './assets/img/icon-linkedin.png';
 import iconTwitter from './assets/img/icon-twitter.png';
 import iconGitHub from './assets/img/icon-github.png';
+import iconReact from './assets/img/icon-react.svg';
+import iconTailwind from './assets/img/icon-tailwind.svg';
+import Navbar from './components/UI/Navbar';
+import Hero from './components/UI/Hero';
 
 function App() {
+
   return (
     <>
-      {/* Navbar */}
-      <div class='pt-2 fixed mx-auto w-full z-10 bg-gray-50 navbar'>
-        <nav class='flex justify-between mx-auto max-w-5xl md:w-4/5 lg:w-3/4 '>
-          <span class='hidden md:block md:ml-5 lg:mr-0'>Logo</span>
-          <ul class='flex  md:mr-2'>
-            <li><button class='btn btn-ghost btn-xs mx-1 sm:btn-sm lg:btn-md h-auto'>Projects</button> </li>
-            <li><button class='btn btn-ghost btn-xs mx-1 sm:btn-sm lg:btn-md h-auto'>Code<span class='hidden sm:inline sm:ml-2'>Library</span></button> </li>
-            <li><button class='btn btn-ghost btn-xs mx-1 sm:btn-sm lg:btn-md h-auto'>Blog<span class='hidden sm:inline sm:ml-2'>Posts</span></button> </li>
-            <li><button class='btn btn-ghost btn-xs mx-1 sm:btn-sm lg:btn-md h-auto'>About</button> </li>
-            <li><button class='btn btn-ghost btn-xs sm:btn-sm lg:btn-md h-auto'>Contact</button> </li>
-          </ul>
-        </nav>
-      </div>
-
-      {/* Hero */}
-      <div class='hero min-h-85vh'>
-        <div class='text-left hero-content items-start'>
-          <div>
-            <img src={hero1} alt='Damian Demasi with a hat in a park on a sunny day.' class='mt-10 hidden lg:block lg:max-w-xs' />
-          </div>
-          <div class='max-w-2xl'>
-            <p class='mb-5'><span><img src={locationPin} class='h-4 inline mb-1 mr-1' alt='Location pin icon' /></span>Adelaide, Australia</p>
-            <h1 class='mb-5 font-bold font-poppins'>
-              <span class='text-3xl md:text-4xl lg:text-5xl block'>Damian Demasi,</span><span class='text-6xl md:text-8xl lg:text-9xl subpixel-antialiased'>web<br />developer</span>
-            </h1>
-            <p class='my-8 md:my-16 text-neutral'>
-              I’m a Web Developer based in Adelaide, Australia. Even though I have a Telecommunications Engineering degree and an MBA, coding is my passion and I want it to be my new focus on my professional carrer. Developing applications for the web has become my drive.
-            </p>
-            <button class='btn mr-10 btn-sm text-xs lg:btn-md mb-5 sm:mb-0'>Get my Resume</button>
-            <button class='btn btn-outline btn-sm text-xs lg:btn-md'>work@damiandemasi.com</button>
-          </div>
-        </div>
-      </div>
+      <Navbar />
+      <Hero />
 
       {/* Projects */}
-      <div class='bg-wave-top w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover'></div>
+      <div class='bg-wave-top w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover -mb-1'></div>
       <div class='bg-black'>
 
         <SectionHeader text={'Projects'} headerGradientStyle={'header-projects'} />
@@ -125,7 +97,7 @@ function App() {
       <button class='btn mx-auto mt-20 block'>Read more articles</button>
 
       {/* About me */}
-      <div class='bg-wave-top w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover mt-10'></div>
+      <div class='bg-wave-top w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover mt-10  -mb-1'></div>
       <div class='bg-black pb-32'>
 
         <SectionHeader text={'About Me'} headerGradientStyle={'header-about-me'} />
@@ -173,7 +145,7 @@ function App() {
       </div>
 
       {/* Contact */}
-      <div class='bg-wave-top w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover mt-32'></div>
+      <div class='bg-wave-top w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover mt-32  -mb-1'></div>
       <div class='bg-black pb-32'>
         <SectionHeader text={'Contact'} headerGradientStyle={'header-contact'} />
         <div class="flex flex-col gap-10 max-w-2xl mx-auto px-2">
@@ -241,9 +213,10 @@ function App() {
               <IconBlack icon={iconTwitter} goTo={'#'}>Twitter</IconBlack>
               <IconBlack icon={iconGitHub} goTo={'#'}>GitHub</IconBlack>
             </div>
-            <p>Made with React, TailwindCSS and DaisyUI</p>
-            <p>Icons from...</p>
-            <p></p>
+            <div class='mt-10 text-xs'>
+              <p>👨‍💻 Portfolio site made by Damian Demasi, using<img src={iconReact} alt="" class='w-7 inline -mx-1' />ReactJS, <img src={iconTailwind} alt="" class='w-4 inline mx-1' />TailwindCSS and DaisyUI.</p>
+              <p>Icons from <a href='https://www.flaticon.com/' target='_blank' rel='noreferrer' class='link ' >Flaticon.</a></p>
+            </div>
           </div>
         </div>
 

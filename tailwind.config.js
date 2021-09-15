@@ -47,7 +47,7 @@ module.exports = {
     rtl: false,
     themes: [
       'light',
-      'dark',
+      // 'dark', TODO: enable it site-wide
       {
         'mytheme': {                      /* your theme name */
           'primary': '#ffffff',           /* primary color */

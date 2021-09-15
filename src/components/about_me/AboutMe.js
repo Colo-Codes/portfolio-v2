@@ -1,4 +1,4 @@
-import hero1 from '../../assets/img/hero1.png';
+import hero1 from '../../assets/img/hero1.webp';
 import iconLinkedIn from '../../assets/img/icon-linkedin.png';
 import iconTwitter from '../../assets/img/icon-twitter.png';
 import iconGitHub from '../../assets/img/icon-github.png';
