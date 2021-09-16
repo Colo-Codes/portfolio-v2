@@ -1,6 +1,6 @@
 const SectionHeader = props => {
 
-    const h2Classes = `${props.headerGradientStyle} text-5xl font-bold font-poppins text-center w-max subpixel-antialiased mx-auto p-2`;
+    const h2Classes = `${props.headerGradientStyle} text-5xl font-bold font-poppins text-center w-max subpixel-antialiased mx-auto p-2 pt-20`;
 
     return (
         <div class={`text-secondary ${props.class}`}>
