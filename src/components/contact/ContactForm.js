@@ -16,7 +16,7 @@ const ContactForm = props => {
     const submitHandler = e => {
         e.preventDefault();
 
-        const formData = new FormData();
+        // const formData = new FormData();
 
         fetch('/', {
             method: 'POST',
