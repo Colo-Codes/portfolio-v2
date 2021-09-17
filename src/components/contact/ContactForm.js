@@ -14,7 +14,6 @@ const ContactForm = props => {
     };
 
     const submitHandler = e => {
-        e.preventDefault();
 
         // const formData = new FormData();
 
@@ -44,6 +43,9 @@ const ContactForm = props => {
             // }
         }).catch((error) =>
             console.error(error));
+
+        e.preventDefault();
+
     };
 
     const handleChangeName = e => {
