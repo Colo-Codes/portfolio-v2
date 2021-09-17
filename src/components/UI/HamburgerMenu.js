@@ -14,7 +14,7 @@ const HamburgerMenu = props => {
         }, 1000);
     };
 
-    const fullPage = isOpen ? 'fixed h-screen w-full z-20' : hide;
+    const fullPage = isOpen ? 'z-20' : `z-n1 ${hide}`;
     const myClass = `rounded-lg drawer drawer-end fixed h-screen w-full ${fullPage}`;
 
     // console.log("OPEN:", isOpen);
