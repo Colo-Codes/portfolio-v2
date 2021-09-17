@@ -61,7 +61,7 @@ const ContactForm = props => {
     return (
         <>
             <form name="contact" method="POST" data-netlify="true" onSubmit={submitHandler}>
-
+                <input type="hidden" name="form-name" value="contact" />
                 <a href="/components/modal#my-modal" class="btn btn-primary">open modal</a>
 
                 <div id="my-modal" class="modal">
