@@ -60,7 +60,7 @@ const ContactForm = props => {
 
     return (
         <>
-            <a href="/components/modal#my-modal" class="btn btn-primary">open modal</a>
+            {/* <a href="/components/modal#my-modal" class="btn btn-primary">open modal</a>
 
             <div id="my-modal" class="modal">
                 <div class="modal-box">
@@ -70,7 +70,7 @@ const ContactForm = props => {
                         <a href="/components/modal#" class="btn">Close</a>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
             <form name="contact" method="POST" data-netlify="true" onSubmit={submitHandler}>
