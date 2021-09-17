@@ -1,9 +1,17 @@
+import { useState } from "react";
 
 
 const ContactForm = props => {
+    const [contactName, setContactName] = useState('');
+    const [contactEmail, setContactEmail] = useState('');
+    const [contactMessage, setContactMessage] = useState('');
 
-    const successMessage = document.querySelector('.form__success-message');
 
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+    };
 
     const submitHandler = e => {
         e.preventDefault();
@@ -13,27 +21,39 @@ const ContactForm = props => {
         fetch('/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams(formData).toString()
+            // body: new URLSearchParams(formData).toString()
+            body: encode({ "form-name": "contact", "contactName": contactName, "contactEmail": contactEmail, "contactMessage": contactMessage })
         }).then(() => {
-            const myName = document.getElementById('name');
-            const myEmail = document.getElementById('email');
-            const myMessage = document.getElementById('message');
-            const hidden = successMessage.classList.contains('hidden');
+            // const myName = document.getElementById('name');
+            // const myEmail = document.getElementById('email');
+            // const myMessage = document.getElementById('message');
+            // const hidden = successMessage.classList.contains('hidden');
 
-            myName.value = '';
-            myEmail.value = '';
-            myMessage.value = '';
+            setContactName('');
+            setContactEmail('');
+            setContactMessage('');
 
-            if (hidden) {
-                successMessage.classList.remove('hidden');
-                setTimeout(() => {
-                    successMessage.classList.add('hidden');
-                }, 3000);
-            } else {
-                successMessage.classList.add('hidden');
-            }
+
+            // if (hidden) {
+            //     successMessage.classList.remove('hidden');
+            //     setTimeout(() => {
+            //         successMessage.classList.add('hidden');
+            //     }, 3000);
+            // } else {
+            //     successMessage.classList.add('hidden');
+            // }
         }).catch((error) =>
             console.error(error));
+    };
+
+    const handleChangeName = e => {
+        setContactName(e.target.value);
+    };
+    const handleChangeEmail = e => {
+        setContactEmail(e.target.value);
+    };
+    const handleChangeMessage = e => {
+        setContactMessage(e.target.value);
     };
 
     return (
@@ -58,19 +78,19 @@ const ContactForm = props => {
                         <label class="label">
                             <span class="label-text">Your name</span>
                         </label>
-                        <input type="text" placeholder="Luke Skywalker" class="input input-bordered" required />
+                        <input type="text" name="contactName" value={contactName} onChange={handleChangeName} placeholder="Luke Skywalker" class="input input-bordered" required />
                     </div>
                     <div class="form-control">
                         <label class="label">
                             <span class="label-text">Your e-mail address</span>
                         </label>
-                        <input type="email" placeholder="luke@tatooine.com" class="input input-bordered" required />
+                        <input type="email" name="contactEmail" value={contactEmail} onChange={handleChangeEmail} placeholder="luke@tatooine.com" class="input input-bordered" required />
                     </div>
                     <div class="form-control">
                         <label class="label">
                             <span class="label-text">Your message</span>
                         </label>
-                        <textarea class="textarea h-24 textarea-bordered" placeholder="I'm thinking about giving you my lightsaber..." required></textarea>
+                        <textarea name="contactMessage" value={contactMessage} onChange={handleChangeMessage} class="textarea h-24 textarea-bordered" placeholder="I'm thinking about giving you my lightsaber..." required></textarea>
                     </div>
                     <input type="submit" value="Send message" class="btn w-max mt-10 mx-auto" />
                 </div>
