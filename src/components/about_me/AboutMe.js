@@ -6,7 +6,7 @@ import ButtonLight from '../UI/ButtonLight';
 import H3Header from '../UI/H3Header';
 import IconWhite from '../UI/IconWhite';
 import TechStack from '../UI/TechStack';
-
+import resume from '../../assets/pdf/Damian-Demasi-Resume.pdf';
 
 const AboutMe = props => {
     return (
@@ -16,12 +16,12 @@ const AboutMe = props => {
                     <img src={hero1} alt='Damian Demasi with a hat in a park on a sunny day.' class='max-w-xs' />
                 </div>
                 <div class="w-3/5 mx-auto mt-14">
-                    <ButtonLight goTo={"#"}>Get my Resume</ButtonLight>
+                    <ButtonLight goTo={resume} target='_blank'>Get my Resume</ButtonLight>
                 </div>
                 <div class="w-4/5 mx-auto mt-14 flex justify-around">
-                    <IconWhite icon={iconLinkedIn} goTo={'#'}>LinkedIn</IconWhite>
-                    <IconWhite icon={iconTwitter} goTo={'#'}>Twitter</IconWhite>
-                    <IconWhite icon={iconGitHub} goTo={'#'}>GitHub</IconWhite>
+                    <IconWhite icon={iconLinkedIn} goTo='https://www.linkedin.com/in/damian-demasi-5451378/'>LinkedIn</IconWhite>
+                    <IconWhite icon={iconTwitter} goTo='https://twitter.com/DamianDemasi'>Twitter</IconWhite>
+                    <IconWhite icon={iconGitHub} goTo='https://github.com/Colo-Codes'>GitHub</IconWhite>
                 </div>
             </div>
             <div class="">

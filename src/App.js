@@ -9,7 +9,6 @@ import Testimonies from './components/about_me/Testimonies';
 import ContactSection from './components/contact/ContactSection';
 
 function App() {
-
   return (
     <>
       {/* Header */}

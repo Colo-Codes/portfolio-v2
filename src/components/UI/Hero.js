@@ -1,8 +1,7 @@
+import { useEffect, useState } from 'react';
 import locationPin from '../../assets/img/locationPin.png';
 import hero1 from '../../assets/img/hero1.webp';
 import resume from '../../assets/pdf/Damian-Demasi-Resume.pdf';
-import { useEffect, useState } from 'react';
-
 
 const Hero = props => {
     const [isAnimated1, setIsAnimated1] = useState(true);
