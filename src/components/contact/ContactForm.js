@@ -1,6 +1,6 @@
 const ContactForm = props => {
     return (
-        <form>
+        <form netlify>
             <div class="p-10 card bg-base-200">
                 <div class="form-control">
                     <label class="label">
