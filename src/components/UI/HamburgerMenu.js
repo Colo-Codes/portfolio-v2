@@ -15,6 +15,7 @@ const HamburgerMenu = props => {
     };
 
     const fullPage = isOpen ? 'fixed h-screen w-full z-20' : hide;
+    const myClass = `rounded-lg drawer drawer-end fixed h-screen w-full ${fullPage}`;
 
     // console.log("OPEN:", isOpen);
 
@@ -23,10 +24,10 @@ const HamburgerMenu = props => {
             <div class='fixed z-30 top-4 right-4 bg-gray-200 rounded-lg md:hidden shadow-md'>
                 <Hamburger toggled={isOpen} toggle={clickHandler} duration={0.5} color="#3D4451" rounded label="Show menu" />
             </div>
-            <div class={`rounded-lg drawer drawer-end fixed h-screen w-full ${fullPage} `} >
-                <input id="my-drawer" type="checkbox" class="drawer-toggle" checked={isOpen} />
+            <div class={myClass} >
+                <input id="my-drawer" type="checkbox" class="drawer-toggle" checked={isOpen} readOnly />
                 <div class="drawer-side">
-                    <label for="my-drawer" class="drawer-overlay" onClick={clickHandler} ></label>
+                    <label htmlFor="my-drawer" class="drawer-overlay" onClick={clickHandler} ></label>
                     <ul class='p-6 pt-20 overflow-y-auto w-80 bg-base-100 flex-col '>
                         <li><a href='#section-projects' class='btn w-full mb-5' onClick={clickHandler}>Projects</a> </li>
                         {/* <li><a href='#section-code-library' class='btn w-full mb-5'>Code<span class='hidden sm:inline sm:ml-2' onClick={clickHandler}>Library</span></a> </li> */}
