@@ -60,20 +60,22 @@ const ContactForm = props => {
 
     return (
         <>
-            <form name="contact" method="post" data-netlify="true" onSubmit={submitHandler}>
-                <input type="hidden" name="form-name" value="contact" />
-                <a href="/components/modal#my-modal" class="btn btn-primary">open modal</a>
+            <a href="/components/modal#my-modal" class="btn btn-primary">open modal</a>
 
-                <div id="my-modal" class="modal">
-                    <div class="modal-box">
-                        <p>Enim dolorem dolorum omnis atque necessitatibus. Consequatur aut adipisci qui iusto illo eaque. Consequatur repudiandae et. Nulla ea quasi eligendi. Saepe velit autem minima.</p>
-                        <div class="modal-action">
-                            <a href="/components/modal#" class="btn btn-primary">Accept</a>
-                            <a href="/components/modal#" class="btn">Close</a>
-                        </div>
+            <div id="my-modal" class="modal">
+                <div class="modal-box">
+                    <p>Enim dolorem dolorum omnis atque necessitatibus. Consequatur aut adipisci qui iusto illo eaque. Consequatur repudiandae et. Nulla ea quasi eligendi. Saepe velit autem minima.</p>
+                    <div class="modal-action">
+                        <a href="/components/modal#" class="btn btn-primary">Accept</a>
+                        <a href="/components/modal#" class="btn">Close</a>
                     </div>
                 </div>
+            </div>
 
+
+            <form name="contact" method="POST" data-netlify="true" onSubmit={submitHandler}>
+
+                <input type="hidden" name="form-name" value="contact" />
 
                 <div class="p-10 card bg-base-200">
                     <div class="form-control">
