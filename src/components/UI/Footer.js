@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import iconLinkedIn from '../../assets/img/icon-linkedin.png';
 import iconTwitter from '../../assets/img/icon-twitter.png';
 import iconGitHub from '../../assets/img/icon-github.png';
@@ -8,19 +7,10 @@ import locationPin from '../../assets/img/locationPin.png';
 import IconBlack from "./IconBlack";
 import NavbarFooter from "./NavbarFooter";
 import resume from '../../assets/pdf/Damian-Demasi-Resume.pdf';
+import EmailOptions from './EmailOptions';
 
 
 const Footer = props => {
-    const [successMessage, setSuccessMessage] = useState('');
-
-    const clickHandler = e => {
-        navigator.clipboard.writeText('work@damiandemasi.com');
-        setSuccessMessage('tooltip tooltip-open tooltip-accent');
-        setTimeout(() => {
-            setSuccessMessage('');
-        }, 2000);
-    };
-
     return (
         <footer class='flex flex-wrap justify-evenly gap-5 lg:gap-10 max-w-5xl m-auto mt-32'>
             <NavbarFooter />
@@ -30,21 +20,10 @@ const Footer = props => {
                     <h1 class='mb-5  font-bold font-poppins'>
                         <span class='block text-md lg:text-xl'>Damian Demasi,</span><span class='text-3xl lg:text-5xl subpixel-antialiased'>web<br />developer</span>
                     </h1>
-                    <a href={resume} target='_blank' rel="noreferrer" class='btn mr-10 btn-sm text-xs lg:btn-md mb-5 sm:mb-0'>Get my Resume</a>
+                    <a href={resume} target='_blank' rel="noreferrer" class='btn mr-10 btn-md mb-5 sm:mb-0'>Get my Resume</a>
                     <div class="dropdown dropdown-hover">
-                        <a href='mailto:work@damiandemasi.com' target='_blank' rel="noreferrer" tabindex="0" class="m-1 btn btn-outline btn-sm text-xs lg:btn-md">work@damiandemasi.com</a>
-                        <ul tabindex="0" class="p-2 shadow dropdown-content bg-base-100 rounded-box ">
-                            <li>
-                                <a class='btn btn-ghost btn-sm text-xs lg:btn-md' href='mailto:work@damiandemasi.com' target='_blank' rel="noreferrer">Open in email client</a>
-                            </li>
-                            <li>
-                                <button class='btn btn-ghost btn-sm text-xs lg:btn-md' onClick={clickHandler}>
-                                    <span data-tip="Copied to clipboard!" class={successMessage}>
-                                        Copy email address
-                                    </span>
-                                </button>
-                            </li>
-                        </ul>
+                        <a href='mailto:work@damiandemasi.com' target='_blank' rel="noreferrer" class="btn btn-outline btn-md">work@damiandemasi.com</a>
+                        <EmailOptions />
                     </div>
                     <div class="mt-14 flex justify-between">
                         <IconBlack icon={iconLinkedIn} goTo='https://www.linkedin.com/in/damian-demasi-5451378/'>LinkedIn</IconBlack>
