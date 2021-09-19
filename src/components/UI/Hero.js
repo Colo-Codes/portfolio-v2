@@ -70,7 +70,7 @@ const Hero = props => {
                         <span class={tailwindClassName}>Damian Demasi,</span><br /><span class={tailwindClassWeb}>web</span><br /><span class={tailwindClassDeveloper}>developer</span>
                     </h1>
                     <p class='my-8 md:my-16 text-neutral xl:leading-loose'>
-                        I’m a Web Developer based in Adelaide, Australia. Even though I have a Telecommunications Engineering degree and an MBA, coding is my passion and I want it to be my new focus on my professional carrer. Developing applications for the web has become my drive.
+                        I’m a Web Developer based in Adelaide, Australia. Even though I have a Telecommunications Engineering degree and an MBA, coding is my passion and my new professional career focus. Developing applications for the web has become my drive.
                     </p>
                     <a href={resume} target='_blank' rel="noreferrer" class='btn mr-10 btn-md text-xs mb-5 sm:mb-0'>Get my Resume</a>
                     <div class="dropdown dropdown-hover">
