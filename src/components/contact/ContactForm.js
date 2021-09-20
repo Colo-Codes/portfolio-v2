@@ -56,7 +56,7 @@ const ContactForm = props => {
             <label for="my-modal"></label>
             {showModalMessage ? <input type="checkbox" id="my-modal" class="modal-toggle" checked readOnly /> : <input type="checkbox" id="my-modal" class="modal-toggle" readOnly />}
             <div class="modal" onClick={closeModalHandler}>
-                <div class="modal-box" onClick={closeModalHandler}>
+                <div class="modal-box mx-16" onClick={closeModalHandler}>
                     {modalMessage}
                     <div class="modal-action">
                         <button class="btn" onClick={closeModalHandler}>Close</button>
