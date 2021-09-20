@@ -5,7 +5,7 @@ const ContactForm = props => {
     const [contactName, setContactName] = useState('');
     const [contactEmail, setContactEmail] = useState('');
     const [contactMessage, setContactMessage] = useState('');
-
+    const [showModalMessage, setShowModalMessage] = useState(false);
 
     const encode = (data) => {
         return Object.keys(data)
@@ -13,39 +13,30 @@ const ContactForm = props => {
             .join("&");
     };
 
+    let modalMessage = <><p>Your message was successfully sent. 😄</p><p class="mt-10">Thank you!</p></>;
     const submitHandler = e => {
-
-        // const formData = new FormData();
 
         fetch('/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            // body: new URLSearchParams(formData).toString()
             body: encode({ "form-name": "contact", "contactName": contactName, "contactEmail": contactEmail, "contactMessage": contactMessage })
         }).then(() => {
-            // const myName = document.getElementById('name');
-            // const myEmail = document.getElementById('email');
-            // const myMessage = document.getElementById('message');
-            // const hidden = successMessage.classList.contains('hidden');
-
             setContactName('');
             setContactEmail('');
             setContactMessage('');
+        }).catch(error => {
+            modalMessage = <><p>Error on sending message!</p><p class="mt-10">{error}</p></>;
+        });
 
-
-            // if (hidden) {
-            //     successMessage.classList.remove('hidden');
-            //     setTimeout(() => {
-            //         successMessage.classList.add('hidden');
-            //     }, 3000);
-            // } else {
-            //     successMessage.classList.add('hidden');
-            // }
-        }).catch((error) =>
-            console.error(error));
-
+        setShowModalMessage(true);
         e.preventDefault();
+    };
 
+    const closeModalHandler = e => {
+        e.stopPropagation();
+        if (e.target.className === 'modal' || e.target.className === 'btn') {
+            setShowModalMessage(false);
+        };
     };
 
     const handleChangeName = e => {
@@ -58,21 +49,19 @@ const ContactForm = props => {
         setContactMessage(e.target.value);
     };
 
+    console.log(showModalMessage);
+
     return (
         <>
-            {/* <a href="/components/modal#my-modal" class="btn btn-primary">open modal</a>
-
-            <div id="my-modal" class="modal">
-                <div class="modal-box">
-                    <p>Enim dolorem dolorum omnis atque necessitatibus. Consequatur aut adipisci qui iusto illo eaque. Consequatur repudiandae et. Nulla ea quasi eligendi. Saepe velit autem minima.</p>
+            {showModalMessage ? <input type="checkbox" id="my-modal" class="modal-toggle" checked /> : <input type="checkbox" id="my-modal" class="modal-toggle" />}
+            <div class="modal" onClick={closeModalHandler}>
+                <div class="modal-box" onClick={closeModalHandler}>
+                    {modalMessage}
                     <div class="modal-action">
-                        <a href="/components/modal#" class="btn btn-primary">Accept</a>
-                        <a href="/components/modal#" class="btn">Close</a>
+                        <button class="btn" onClick={closeModalHandler}>Close</button>
                     </div>
                 </div>
-            </div> */}
-
-
+            </div>
             <form name="contact" method="POST" data-netlify="true" onSubmit={submitHandler}>
 
                 <input type="hidden" name="form-name" value="contact" />
@@ -103,4 +92,4 @@ const ContactForm = props => {
     );
 };
 
-export default ContactForm;
+export default ContactForm;;
