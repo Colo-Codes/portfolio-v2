@@ -13,14 +13,13 @@ console.log('    __  __     ____                               __    ____',
   '\n  / /_/ / _ \\/ / / __ \\     | | /| / / __ \\/ ___/ / __  / / ',
   '\n / __  /  __/ / / /_/ /     | |/ |/ / /_/ / /  / / /_/ /_/  ',
   '\n/_/ /_/\\___/_/_/\\____( )    |__/|__/\\____/_/  /_/\\__,_(_)   ',
-  '\n                     |/                                     ');
-console.log('Thanks for visiting my portfolio site! Please, feel free to contact me using any of these options:');
-console.log('📧 Email: work@damiandemasi.com');
-console.log('🐤 Twitter: https://twitter.com/DamianDemasi');
-console.log('👨‍💼 LinkedIn: https://www.linkedin.com/in/damian-demasi/');
+  '\n                     |/                                     ',
+  '\n\nThanks for visiting my portfolio site! Please, feel free to contact me using any of these options:',
+  '\n📧 Email: work@damiandemasi.com',
+  '\n🐤 Twitter: https://twitter.com/DamianDemasi',
+  '\n👨‍💼 LinkedIn: https://www.linkedin.com/in/damian-demasi/');
 
 function App() {
-
 
   return (
     <>

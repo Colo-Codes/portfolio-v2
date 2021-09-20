@@ -39,8 +39,6 @@ const Hero = props => {
                 setTimeout(() => {
                     setIsAnimated1(!isAnimated1); // Set
                     setTimeout(() => { setIsAnimated3(!isAnimated3); }, 2000); // Remove
-                    // console.log(isAnimated1, isAnimated2, isAnimated3);
-                    // console.log(new Date().getSeconds());
                 }, 1000);
             }, 2000);
         }, 2000);
@@ -49,8 +47,6 @@ const Hero = props => {
             clearTimeout(timer);
         };
     }, [isAnimated1, isAnimated2, isAnimated3]);
-
-    // console.log('render');
 
     const commonClasses = 'inline-block subpixel-antialiased';
     const commonBigTextClasses = 'text-6xl md:text-8xl lg:text-9xl';
