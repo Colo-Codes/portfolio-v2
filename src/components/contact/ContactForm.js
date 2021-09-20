@@ -72,19 +72,19 @@ const ContactForm = props => {
                         <label class="label">
                             <span class="label-text">Your name</span>
                         </label>
-                        <input type="text" name="contactName" value={contactName} onChange={handleChangeName} placeholder="Luke Skywalker" class="input input-bordered" required />
+                        <input type="text" name="contactName" value={contactName || ''} onChange={handleChangeName} placeholder="Luke Skywalker" class="input input-bordered" required />
                     </div>
                     <div class="form-control">
                         <label class="label">
                             <span class="label-text">Your e-mail address</span>
                         </label>
-                        <input type="email" name="contactEmail" value={contactEmail} onChange={handleChangeEmail} placeholder="luke@tatooine.com" class="input input-bordered" required />
+                        <input type="email" name="contactEmail" value={contactEmail || ''} onChange={handleChangeEmail} placeholder="luke@tatooine.com" class="input input-bordered" required />
                     </div>
                     <div class="form-control">
                         <label class="label">
                             <span class="label-text">Your message</span>
                         </label>
-                        <textarea name="contactMessage" value={contactMessage} onChange={handleChangeMessage} class="textarea h-24 textarea-bordered" placeholder="I'm thinking about giving you my lightsaber..." required></textarea>
+                        <textarea name="contactMessage" value={contactMessage || ''} onChange={handleChangeMessage} class="textarea h-24 textarea-bordered" placeholder="I'm thinking about giving you my lightsaber..." required></textarea>
                     </div>
                     <input type="submit" value="Send message" class="btn w-max mt-10 mx-auto" />
                 </div>

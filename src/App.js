@@ -7,7 +7,21 @@ import Testimonies from './components/about_me/Testimonies';
 import ContactSection from './components/contact/ContactSection';
 import Header from './components/UI/Header';
 
+// Easter egg
+console.log('    __  __     ____                               __    ____',
+  '\n   / / / /__  / / /___       _      ______  _____/ /___/ / /',
+  '\n  / /_/ / _ \\/ / / __ \\     | | /| / / __ \\/ ___/ / __  / / ',
+  '\n / __  /  __/ / / /_/ /     | |/ |/ / /_/ / /  / / /_/ /_/  ',
+  '\n/_/ /_/\\___/_/_/\\____( )    |__/|__/\\____/_/  /_/\\__,_(_)   ',
+  '\n                     |/                                     ');
+console.log('Thanks for visiting my portfolio site! Please, feel free to contact me using any of these options:');
+console.log('📧 Email: work@damiandemasi.com');
+console.log('🐤 Twitter: https://twitter.com/DamianDemasi');
+console.log('👨‍💼 LinkedIn: https://www.linkedin.com/in/damian-demasi/');
+
 function App() {
+
+
   return (
     <>
       {/* Header */}
