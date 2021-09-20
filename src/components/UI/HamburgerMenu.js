@@ -3,7 +3,7 @@ import { Divide as Hamburger } from 'hamburger-react';
 
 const HamburgerMenu = props => {
     const [isOpen, setIsOpen] = useState(false);
-    const [hide, setHide] = useState('');
+    const [hide, setHide] = useState('z-n1');
 
     const clickHandler = () => {
         setIsOpen(!isOpen);
@@ -12,7 +12,7 @@ const HamburgerMenu = props => {
         setHide('');
         setTimeout(() => {
             setHide('z-n1');
-        }, 500);
+        }, 300);
     };
 
     const moveToBack = !isOpen ? `${hide}` : '';
