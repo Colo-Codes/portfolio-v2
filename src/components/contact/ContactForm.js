@@ -49,12 +49,11 @@ const ContactForm = props => {
         setContactMessage(e.target.value);
     };
 
-    console.log(showModalMessage);
+    // console.log(showModalMessage);
 
     return (
         <>
-            <label for="my-modal"></label>
-            {showModalMessage ? <input type="checkbox" id="my-modal" name="my-modal" class="modal-toggle" checked /> : <input type="checkbox" id="my-modal" name="my-modal" class="modal-toggle" />}
+            {showModalMessage ? <input type="checkbox" id="my-modal" aria-label="" class="modal-toggle" checked /> : <input type="checkbox" id="my-modal" aria-label="" class="modal-toggle" />}
             <div class="modal" onClick={closeModalHandler}>
                 <div class="modal-box" onClick={closeModalHandler}>
                     {modalMessage}
