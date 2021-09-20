@@ -20,7 +20,7 @@ const ContactSection = props => {
                         <a href='mailto:work@damiandemasi.com' target='_blank' rel="noreferrer" class="btn btn-primary mb-1 w-full z-1 relative lg:btn-md">work@damiandemasi.com</a>
                         <EmailOptions />
                     </div>
-                    <ButtonLight class='w-max btn-md sm:mb-0' goTo='https://www.linkedin.com/in/damian-demasi-5451378/' target='_blank'>Message me on LinkedIn</ButtonLight>
+                    <ButtonLight class='w-max btn-md sm:mb-0' goTo='https://www.linkedin.com/in/damian-demasi-5451378/' target='_blank' rel="noreferrer">Message me on LinkedIn</ButtonLight>
                 </div>
                 <ParagraphLight>You can shoot me an email, send me a message on LinkedIn, or, if you prefer, use the contact form below.</ParagraphLight>
                 <ContactForm />

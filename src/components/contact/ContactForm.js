@@ -53,6 +53,7 @@ const ContactForm = props => {
 
     return (
         <>
+            <label for="my-modal"></label>
             {showModalMessage ? <input type="checkbox" id="my-modal" class="modal-toggle" checked /> : <input type="checkbox" id="my-modal" class="modal-toggle" />}
             <div class="modal" onClick={closeModalHandler}>
                 <div class="modal-box" onClick={closeModalHandler}>

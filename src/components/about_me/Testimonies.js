@@ -1,6 +1,6 @@
-import reviewCesar from '../../assets/img/cesar-villagra.png';
-import reviewExequiel from '../../assets/img/exequiel-barrirero.png';
-import reviewAdrian from '../../assets/img/adrian-dzienisik.png';
+import reviewCesar from '../../assets/img/cesar-villagra.webp';
+import reviewExequiel from '../../assets/img/exequiel-barrirero.webp';
+import reviewAdrian from '../../assets/img/adrian-dzienisik.webp';
 import CardTestimony from "./CardTestimony";
 
 const Testimonies = props => {

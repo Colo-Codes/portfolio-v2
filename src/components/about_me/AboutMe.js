@@ -1,7 +1,7 @@
 import hero1 from '../../assets/img/hero1.webp';
-import iconLinkedIn from '../../assets/img/icon-linkedin.png';
-import iconTwitter from '../../assets/img/icon-twitter.png';
-import iconGitHub from '../../assets/img/icon-github.png';
+import iconLinkedIn from '../../assets/img/icon-linkedin.webp';
+import iconTwitter from '../../assets/img/icon-twitter.webp';
+import iconGitHub from '../../assets/img/icon-github.webp';
 import ButtonLight from '../UI/ButtonLight';
 import H3Header from '../UI/H3Header';
 import IconWhite from '../UI/IconWhite';
@@ -16,12 +16,12 @@ const AboutMe = props => {
                     <img src={hero1} alt='Damian Demasi with a hat in a park on a sunny day.' class='max-w-xs' />
                 </div>
                 <div class="w-3/5 mx-auto mt-14">
-                    <ButtonLight goTo={resume} target='_blank'>Get my Resume</ButtonLight>
+                    <ButtonLight goTo={resume} target='_blank' rel="noreferrer">Get my Resume</ButtonLight>
                 </div>
                 <div class="w-4/5 mx-auto mt-14 flex justify-around">
-                    <IconWhite icon={iconLinkedIn} goTo='https://www.linkedin.com/in/damian-demasi-5451378/'>LinkedIn</IconWhite>
-                    <IconWhite icon={iconTwitter} goTo='https://twitter.com/DamianDemasi'>Twitter</IconWhite>
-                    <IconWhite icon={iconGitHub} goTo='https://github.com/Colo-Codes'>GitHub</IconWhite>
+                    <IconWhite icon={iconLinkedIn} goTo='https://www.linkedin.com/in/damian-demasi-5451378/' ariaLabel='LinkedIn'>LinkedIn</IconWhite>
+                    <IconWhite icon={iconTwitter} goTo='https://twitter.com/DamianDemasi' ariaLabel='Twitter'>Twitter</IconWhite>
+                    <IconWhite icon={iconGitHub} goTo='https://github.com/Colo-Codes' ariaLabel='GitHub'>GitHub</IconWhite>
                 </div>
             </div>
             <div class="">

@@ -24,6 +24,7 @@ const HamburgerMenu = props => {
             <div class='fixed z-30 top-4 right-4 bg-gray-200 rounded-lg md:hidden shadow-md'>
                 <Hamburger toggled={isOpen} toggle={clickHandler} duration={0.5} color="#3D4451" rounded label="Show menu" />
             </div>
+            <label for="my-drawer"></label>
             <div class={myClass} >
                 <input id="my-drawer" type="checkbox" class="drawer-toggle" checked={isOpen} readOnly />
                 <div class="drawer-side">

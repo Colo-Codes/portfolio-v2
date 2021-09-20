@@ -1,7 +1,7 @@
 import iconFigma from '../../assets/img/icon-figma.png';
 import iconHTML5 from '../../assets/img/icon-html5.png';
 import iconCSS3 from '../../assets/img/icon-css3.png';
-import iconGitHub from '../../assets/img/icon-github.png';
+import iconGitHub from '../../assets/img/icon-github.webp';
 import iconJavaScript from '../../assets/img/icon-javascript-black.png';
 import TechStackElement from './TechStackElement';
 

@@ -1,9 +1,9 @@
-import iconLinkedIn from '../../assets/img/icon-linkedin.png';
-import iconTwitter from '../../assets/img/icon-twitter.png';
-import iconGitHub from '../../assets/img/icon-github.png';
+import iconLinkedIn from '../../assets/img/icon-linkedin.webp';
+import iconTwitter from '../../assets/img/icon-twitter.webp';
+import iconGitHub from '../../assets/img/icon-github.webp';
 import iconReact from '../../assets/img/icon-react.svg';
 import iconTailwind from '../../assets/img/icon-tailwind.svg';
-import locationPin from '../../assets/img/locationPin.png';
+import locationPin from '../../assets/img/locationPin.webp';
 import IconBlack from "./IconBlack";
 import NavbarFooter from "./NavbarFooter";
 import resume from '../../assets/pdf/Damian-Demasi-Resume.pdf';
@@ -26,9 +26,9 @@ const Footer = props => {
                         <EmailOptions />
                     </div>
                     <div class="mt-14 flex justify-between">
-                        <IconBlack icon={iconLinkedIn} goTo='https://www.linkedin.com/in/damian-demasi-5451378/'>LinkedIn</IconBlack>
-                        <IconBlack icon={iconTwitter} goTo='https://twitter.com/DamianDemasi'>Twitter</IconBlack>
-                        <IconBlack icon={iconGitHub} goTo='https://github.com/Colo-Codes'>GitHub</IconBlack>
+                        <IconBlack icon={iconLinkedIn} goTo='https://www.linkedin.com/in/damian-demasi-5451378/' ariaLabel='LinkedIn'>LinkedIn</IconBlack>
+                        <IconBlack icon={iconTwitter} goTo='https://twitter.com/DamianDemasi' ariaLabel='Twitter'>Twitter</IconBlack>
+                        <IconBlack icon={iconGitHub} goTo='https://github.com/Colo-Codes' ariaLabel='GitHub'>GitHub</IconBlack>
                     </div>
                     <div class='mt-10 text-xs'>
                         <p>👨‍💻 Portfolio site made by Damian Demasi, using<img src={iconReact} alt="" class='w-7 inline -mx-1' />ReactJS, <img src={iconTailwind} alt="" class='w-4 inline mx-1' />TailwindCSS and DaisyUI.</p>

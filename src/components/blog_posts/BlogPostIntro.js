@@ -8,8 +8,8 @@ const BlogPostIntro = props => {
                 <div class={`${props.bgImage} bg-contain bg-no-repeat opacity-10 w-40 md:w-52 h-40 md:h-52 z-0 absolute -ml-5`}></div>
                 <div class="w-10/12 mx-auto md:mx-0 md:ml-auto md:w-8/12 pt-7">
                     {/* <div class="badge badge-outline mb-5">Choose a platform</div> */}
-                    <ButtonDark goTo={props.linkHashnode} target='_blank'>Hashnode</ButtonDark>
-                    <ButtonDark goTo={props.linkDevto} target='_blank'>Dev.to</ButtonDark>
+                    <ButtonDark goTo={props.linkHashnode} target='_blank' rel="noreferrer">Hashnode</ButtonDark>
+                    <ButtonDark goTo={props.linkDevto} target='_blank' rel="noreferrer">Dev.to</ButtonDark>
                     {/* <ButtonDark goTo={"#"}>Medium</ButtonDark> */}
                 </div>
             </div>
