@@ -30,7 +30,7 @@ const AboutMe = props => {
                 </H3Header>
                 {props.children}
                 <h4 class="text-xl font-bold mt-5 mb-3">My tech stack</h4>
-                <p data-theme="mytheme" class="text-secondary mb-5">I'm proficient with the following technologies:</p>
+                <p data-theme="mytheme" class="text-secondary mb-5">I'm proficient with the following relevant technologies:</p>
                 <div class="grid grid-cols-5 gap-4">
                     <TechStack usedTech={props.techStack} />
                 </div>
