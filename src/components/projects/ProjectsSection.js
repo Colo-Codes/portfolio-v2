@@ -13,7 +13,7 @@ const ProjectsSection = props => {
                 <ProjectRight
                     projectTitle={'COVID-19 Dashboard'}
                     bgImage={'bg-virus'}
-                    techStack={['Figma', 'HTML5', 'CSS3', 'GitHub', 'JS']}
+                    techStack={['HTML5', 'CSS3', 'GitHub', 'JS', 'Figma', 'Netlify']}
                     buttonWatchItLive={'https://colo-codes.github.io/mini-projects/covid-19-dashboard-app/'}
                     buttonDescription={'https://blog.damiandemasi.com/my-second-vanilla-javascript-project-using-apis-promises-classes-error-handling-and-more'}
                     buttonGitHub={'https://github.com/Colo-Codes/mini-projects/tree/main/covid-19-dashboard-app'}>
@@ -50,7 +50,7 @@ const ProjectsSection = props => {
                 <ProjectLeft
                     projectTitle={'To-Do app'}
                     bgImage={'bg-to-do'}
-                    techStack={['Figma', 'HTML5', 'CSS3', 'GitHub', 'JS']}
+                    techStack={['HTML5', 'CSS3', 'GitHub', 'JS', 'Figma', 'Netlify']}
                     buttonWatchItLive={'https://colo-codes.github.io/mini-projects/todo-app/'}
                     buttonDescription={'https://blog.damiandemasi.com/my-first-vanilla-javascript-project-making-a-simple-to-do-app'}
                     buttonGitHub={'https://github.com/Colo-Codes/mini-projects/tree/main/todo-app'}>

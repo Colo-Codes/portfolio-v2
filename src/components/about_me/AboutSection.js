@@ -7,7 +7,7 @@ const AboutSection = props => {
         <div class='bg-black pb-32'>
             <section id='section-about'>
                 <SectionHeader text={'About Me'} headerGradientStyle={'header-about-me'} />
-                <AboutMe projectTitle={`Hi! 👋 I'm Damian`} bgImage={'bg-virus'} techStack={['Figma', 'HTML5', 'CSS3', 'GitHub', 'JS']}>
+                <AboutMe projectTitle={`Hi! 👋 I'm Damian`} bgImage={'bg-virus'} techStack={['HTML5', 'CSS3', 'GitHub', 'JS', 'React', 'Figma', 'Netlify', 'Linux']}>
                     <ParagraphLight>
                         My interest in technology started when I was a teenager and <a class='link link-primary' href='https://en.wikipedia.org/wiki/Dial-up_Internet_access' target='_blank' rel='noreferrer'>dial-up</a> Internet connections were booming. I still remember plugging in a 10 metres telephone cable to my PC from the phone box every night to avoid keeping my family’s phone line busy during peak hours.
                     </ParagraphLight>
