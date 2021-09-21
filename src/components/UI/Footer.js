@@ -26,7 +26,7 @@ const Footer = props => {
                         <EmailOptions />
                     </div>
                     <div class="mt-14 flex justify-between">
-                        <IconBlack icon={iconLinkedIn} goTo='https://www.linkedin.com/in/damian-demasi-5451378/' ariaLabel='LinkedIn'>LinkedIn</IconBlack>
+                        <IconBlack icon={iconLinkedIn} goTo='https://www.linkedin.com/in/damian-demasi/' ariaLabel='LinkedIn'>LinkedIn</IconBlack>
                         <IconBlack icon={iconTwitter} goTo='https://twitter.com/DamianDemasi' ariaLabel='Twitter'>Twitter</IconBlack>
                         <IconBlack icon={iconGitHub} goTo='https://github.com/Colo-Codes' ariaLabel='GitHub'>GitHub</IconBlack>
                     </div>
