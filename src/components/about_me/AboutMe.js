@@ -19,7 +19,7 @@ const AboutMe = props => {
                     <ButtonLight goTo={resume} target='_blank' rel="noreferrer">Get my Resume</ButtonLight>
                 </div>
                 <div class="w-4/5 mx-auto mt-14 flex justify-around">
-                    <IconWhite icon={iconLinkedIn} goTo='https://www.linkedin.com/in/damian-demasi-5451378/' ariaLabel='LinkedIn'>LinkedIn</IconWhite>
+                    <IconWhite icon={iconLinkedIn} goTo='https://www.linkedin.com/in/damian-demasi/' ariaLabel='LinkedIn'>LinkedIn</IconWhite>
                     <IconWhite icon={iconTwitter} goTo='https://twitter.com/DamianDemasi' ariaLabel='Twitter'>Twitter</IconWhite>
                     <IconWhite icon={iconGitHub} goTo='https://github.com/Colo-Codes' ariaLabel='GitHub'>GitHub</IconWhite>
                 </div>
